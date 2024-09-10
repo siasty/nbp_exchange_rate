@@ -148,23 +148,11 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"nbp_exchange_rate.tasks.all"
-# 	],
-# 	"daily": [
-# 		"nbp_exchange_rate.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"nbp_exchange_rate.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"nbp_exchange_rate.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"nbp_exchange_rate.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+ 	"daily": [
+ 		"nbp_exchange_rate.nbp_exchange_rate.scheduler.tasks.daily.job"
+ 	]
+}
 
 # Testing
 # -------
